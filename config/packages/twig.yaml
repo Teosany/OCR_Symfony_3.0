@@ -1,5 +1,12 @@
 twig:
     file_name_pattern: '*.twig'
+    debug: '%kernel.debug%'
+    strict_variables: '%kernel.debug%'
+#    form_themes: ['bootstrap_5_horizontal_layout.html.twig']
+#    form_themes: ['form_div_layout.html.twig']
+#    form_themes: ['tailwind_2_layout.html.twig']
+    form_themes: ['tailwind_2_layout.html.twig', 'form/errors.html.twig']
+
 
 when@test:
     twig:
